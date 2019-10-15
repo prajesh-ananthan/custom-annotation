@@ -1,10 +1,12 @@
 package io.prajeshananthan.customannotation.model;
 
-import io.prajeshananthan.customannotation.annotations.Init;
-import io.prajeshananthan.customannotation.annotations.JsonElement;
-import io.prajeshananthan.customannotation.annotations.JsonSerializer;
+import io.prajeshananthan.customannotation.annotations.baeldung.Init;
+import io.prajeshananthan.customannotation.annotations.baeldung.JsonElement;
+import io.prajeshananthan.customannotation.annotations.baeldung.JsonSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
 
 /**
  * Created by prajesh.ananthan on 12/10/2019.
@@ -17,9 +19,11 @@ import lombok.Data;
 @JsonSerializer
 public class Person {
 
+    @NotBlank(message = "firstName cannot be empty")
     @JsonElement
     private String firstName;
 
+    @NotBlank(message = "lastName cannot be empty")
     @JsonElement
     private String lastName;
 
