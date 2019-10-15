@@ -1,7 +1,7 @@
 package io.prajeshananthan.customannotation;
 
-import io.prajeshananthan.customannotation.annotations.Init;
-import io.prajeshananthan.customannotation.annotations.JsonElement;
+import io.prajeshananthan.customannotation.annotations.baeldung.Init;
+import io.prajeshananthan.customannotation.annotations.baeldung.JsonElement;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
